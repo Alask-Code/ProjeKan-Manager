@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "author": "Alask-Code",
-  "name": "vite-react-boilerplate",
+  "name": "projekan-manager",
   "version": "1.0.0",
   "scripts": {
     "start": "vite",

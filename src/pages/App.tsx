@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter basename={import.meta.env.BASE_URL} useTransitions>
       <Routes>
         {routes.map((route) => (
-          <Route key={route.path} path={route.path} Component={route.Component} />
+          <Route index key={route.path} path={route.path} Component={route.Component} />
         ))}
       </Routes>
     </BrowserRouter>

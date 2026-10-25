@@ -1,2 +1,8 @@
 @import 'tailwindcss';
 @config '../../tailwind.config.js';
+
+* {
+  font-family: monospace;
+  user-select: none;
+  @apply border-mauve-600;
+}

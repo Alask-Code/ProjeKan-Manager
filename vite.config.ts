@@ -5,11 +5,12 @@ import { join } from 'path';
 
 const root = __dirname;
 const srcRoot = join(__dirname, 'src');
+const assetsRoot = join(__dirname, 'src', 'assets');
 const outDir = join(root, 'dist');
 
 export default defineConfig(({ command }) => ({
   root,
-  base: command === 'build' ? '/my-little-baby/' : '/',
+  base: command === 'build' ? '/ProjecKan-Manager/' : '/',
   plugins: [
     react(),
     {
@@ -23,7 +24,8 @@ export default defineConfig(({ command }) => ({
   resolve: {
     alias: {
       '@': srcRoot,
-      '/@': srcRoot
+      '/@': srcRoot,
+      '@assets': assetsRoot
     }
   },
   build: {
