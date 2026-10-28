@@ -2196,6 +2196,74 @@ body {
     padding: 18px 14px 22px;
   }
 }
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.app-header > p {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pwa-install-button {
+  display: inline-flex;
+  min-height: 36px;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 6px 10px;
+  border: var(--border-width, 2px) solid var(--border-color, #76568f);
+  border-radius: var(--control-radius, 0px);
+  background: var(--raised-color, #33263f);
+  color: var(--text-color, #eadcf5);
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.pwa-install-button:hover {
+  border-color: var(--primary-color, #a77ec3);
+  color: var(--primary-color, #a77ec3);
+}
+.pwa-install-button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+.pwa-install-dialog {
+  padding: 20px;
+}
+.pwa-steps {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0 0 0 23px;
+  color: var(--muted-color, #b59bc9);
+  font-size: 12px;
+  line-height: 1.65;
+}
+.pwa-steps strong {
+  color: var(--text-color, #eadcf5);
+}
+.pwa-close-button {
+  margin-top: 18px;
+}
+@media (max-width: 560px) {
+  .app-header > p {
+    font-size: 18px;
+  }
+  .pwa-install-button {
+    min-height: 34px;
+    padding: 5px 7px;
+    font-size: 10px;
+  }
+  .pwa-install-dialog {
+    padding: 15px;
+  }
+}
 .project-repository {
   display: flex;
   flex-direction: column;

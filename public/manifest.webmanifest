@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "ProjeKan Manager",
+  "short_name": "ProjeKan",
+  "description": "Gerencie projetos em um quadro Kanban.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "theme_color": "#17131d",
+  "background_color": "#17131d",
+  "categories": ["productivity", "utilities"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
