@@ -173,6 +173,24 @@ export const themePresets: { id: string; name: string; settings: ThemeSettings }
     }
   },
   {
+    id: 'amoled',
+    name: 'AMOLED',
+    settings: {
+      ...defaultTheme,
+      primary: '#8ab4f8',
+      background: '#000000',
+      surface: '#050505',
+      raised: '#111111',
+      text: '#f5f5f5',
+      muted: '#a1a1aa',
+      border: '#303030',
+      danger: '#ff6b6b',
+      success: '#65d69a',
+      warning: '#f2c66d',
+      info: '#70c8ff'
+    }
+  },
+  {
     id: 'ms-dos',
     name: 'MS-DOS',
     settings: {
