@@ -1,17 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import {
-  FiActivity,
-  FiBarChart2,
-  FiBell,
-  FiBookOpen,
-  FiGrid,
-  FiHeart,
-  FiHome,
-  FiSettings,
-  FiShield,
-  FiUsers
-} from 'react-icons/fi';
+import { FiGrid, FiHome } from 'react-icons/fi';
 
 const navigation = [{ to: '/app/', label: 'Resumo', icon: FiHome }];
 
