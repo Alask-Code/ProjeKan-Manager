@@ -1793,10 +1793,25 @@ body {
   color: var(--warning-color, #d7ad58);
 }
 .delete-confirm {
-  border: var(--border-width, 2px) solid var(--border-color, #76568f);
+  border: var(--border-width, 2px) solid var(--border-color, #76568f) !important;
+  border-radius: var(--control-radius, 0px) !important;
+  background: var(--surface-color, #1e1826) !important;
 }
 .delete-confirm p {
   color: var(--text-color, #eadcf5);
+}
+.delete-confirm .button-secondary,
+.delete-confirm .button-danger {
+  border: var(--border-width, 2px) solid var(--border-color, #76568f) !important;
+  border-radius: var(--control-radius, 0px) !important;
+}
+.delete-confirm .button-secondary {
+  background: var(--raised-color, #33263f) !important;
+  color: var(--text-color, #eadcf5) !important;
+}
+.delete-confirm .button-danger {
+  background: color-mix(in srgb, var(--danger-color, #d26f83) 28%, var(--surface-color, #1e1826)) !important;
+  color: var(--danger-color, #d26f83) !important;
 }
 .navbar-item [class*='bg-mauve-500'] {
   background: var(--primary-color, #a77ec3);
