@@ -81,6 +81,117 @@ export const themePresets: { id: string; name: string; settings: ThemeSettings }
       border: '#956449',
       warning: '#e5bb67'
     }
+  },
+  {
+    id: 'dark',
+    name: 'Dark',
+    settings: {
+      ...defaultTheme,
+      primary: '#8b96a8',
+      background: '#111318',
+      surface: '#1a1d24',
+      raised: '#292d36',
+      text: '#e6e8ec',
+      muted: '#a4a9b4',
+      border: '#484e5b',
+      danger: '#ed7278',
+      success: '#62bd91',
+      warning: '#dfb85d',
+      info: '#66a8d6'
+    }
+  },
+  {
+    id: 'golden',
+    name: 'Golden',
+    settings: {
+      ...defaultTheme,
+      primary: '#d7ae45',
+      background: '#17140d',
+      surface: '#211d12',
+      raised: '#342c18',
+      text: '#f3e8c9',
+      muted: '#c3b17e',
+      border: '#78652e',
+      danger: '#df7370',
+      success: '#83b56b',
+      warning: '#e4c35b',
+      info: '#78adc1'
+    }
+  },
+  {
+    id: 'darkula',
+    name: 'Darkula',
+    settings: {
+      ...defaultTheme,
+      primary: '#bd93f9',
+      background: '#282a36',
+      surface: '#21222c',
+      raised: '#44475a',
+      text: '#f8f8f2',
+      muted: '#bd93f9',
+      border: '#6272a4',
+      danger: '#ff5555',
+      success: '#50fa7b',
+      warning: '#f1fa8c',
+      info: '#8be9fd'
+    }
+  },
+  {
+    id: 'omnidark',
+    name: 'OmniDark',
+    settings: {
+      ...defaultTheme,
+      primary: '#7ed6c2',
+      background: '#080b0d',
+      surface: '#101619',
+      raised: '#1b2529',
+      text: '#e2eeeb',
+      muted: '#91aaa4',
+      border: '#354d4a',
+      danger: '#f07777',
+      success: '#72d6a5',
+      warning: '#e0bd70',
+      info: '#7ab9dc'
+    }
+  },
+  {
+    id: 'visual-studio',
+    name: 'Visual Studio',
+    settings: {
+      ...defaultTheme,
+      primary: '#007acc',
+      background: '#1e1e1e',
+      surface: '#252526',
+      raised: '#333333',
+      text: '#d4d4d4',
+      muted: '#a0a0a0',
+      border: '#484848',
+      danger: '#f48771',
+      success: '#6a9955',
+      warning: '#cca700',
+      info: '#4fc1ff'
+    }
+  },
+  {
+    id: 'ms-dos',
+    name: 'MS-DOS',
+    settings: {
+      ...defaultTheme,
+      primary: '#ffff55',
+      background: '#0000aa',
+      surface: '#00008b',
+      raised: '#0000c8',
+      text: '#ffffff',
+      muted: '#c0c0c0',
+      border: '#aaaaaa',
+      danger: '#ff5555',
+      success: '#55ff55',
+      warning: '#ffff55',
+      info: '#55ffff',
+      borderRadius: 0,
+      borderWidth: 1,
+      font: '"Courier New", monospace'
+    }
   }
 ];
 

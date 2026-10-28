@@ -9,12 +9,18 @@ export default function QuickMenuToggler({
   isActive: boolean;
 }) {
   return (
-    <button onClick={() => setActive(!isActive)} className="quick-menu-toggle flex cursor-pointer items-stretch gap-2">
-      <div className="border-2 p-2">
-        {isActive ? <PiArrowLeft className="text-2xl" /> : <PiList className="text-2xl" />}
-      </div>
+    <button
+      aria-expanded={isActive}
+      aria-label={isActive ? 'Recolher menu' : 'Expandir menu'}
+      className="quick-menu-toggle"
+      onClick={() => setActive(!isActive)}
+      type="button"
+    >
+      <span className="quick-menu-icon">
+        {isActive ? <PiArrowLeft className="quick-menu-symbol" /> : <PiList className="quick-menu-symbol" />}
+      </span>
 
-      {isActive && <p className="border-2 text-xl font-bold flex px-2 pr-12 w-full items-center">Quick Menu</p>}
+      {isActive && <span className="quick-menu-label">Quick Menu</span>}
     </button>
   );
 }
